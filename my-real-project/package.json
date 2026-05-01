@@ -1,0 +1,9 @@
+{
+  "name": "my-real-project",
+  "version": "1.0.0",
+  "description": "My actual application",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  }
+}

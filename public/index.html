@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Kubernetes Guidebook</title>
+    <link rel="stylesheet" href="/style.css?v=4.4">
+</head>
+<body>
+    <div class="watermark">Leena Adapakala</div>
+    <div class="container">
+        <header>
+            <h1>Interactive Kubernetes Guidebook</h1>
+        </header>
+        <main id="content-area">
+            <!-- Markdown content will be injected here -->
+        </main>
+        <div id="interactive-area">
+            <div id="ai-response-area" aria-live="polite">
+                <!-- AI responses will appear here -->
+            </div>
+            <div class="input-container">
+                <input type="text" id="question-input" placeholder="Ask a question about this topic..." autocomplete="off">
+                <button id="ask-button">Ask</button>
+            </div>
+        </div>
+        <footer>
+            <button id="prev-button">&larr; Previous Page</button>
+            <p id="page-info">Loading...</p>
+            <button id="next-button">Next Page &rarr;</button>
+        </footer>
+    </div>
+    <script src="client.js"></script>
+</body>
+</html>

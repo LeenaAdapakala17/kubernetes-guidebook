@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: my-real-project-deployment # Unique name for your deployment
+spec:
+  replicas: 2 # Desired number of instances of your app
+  selector:
+    matchLabels:
+      app: my-real-project # Unique label for your project
+  template:
+    metadata:
+      labels:
+        app: my-real-project # Must match selector label
+    spec:
+      containers:
+      - name: my-real-project-container # Unique name for the container
+        image: my-real-project:1.0 # Your custom image name and tag
+        imagePullPolicy: Never # Crucial for local Minikube builds
+        ports:
+        - containerPort: 8080 # IMPORTANT: Must match EXPOSE in Dockerfile and targetPort in Service

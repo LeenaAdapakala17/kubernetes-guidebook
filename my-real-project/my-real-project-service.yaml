@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: my-real-project-service # Unique name for your service
+spec:
+  selector:
+    app: my-real-project # Must match the 'app' label in your Deployment
+  ports:
+    - protocol: TCP
+      port: 80 # The port the service will be exposed on (e.g., standard HTTP)
+      targetPort: 8080 # IMPORTANT: Must match containerPort in Deployment
+  type: LoadBalancer # Expose externally (Minikube will provide a URL)

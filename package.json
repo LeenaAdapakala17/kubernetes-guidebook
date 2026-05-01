@@ -1,0 +1,19 @@
+{
+  "name": "interactive-kubernetes-guidebook",
+  "version": "1.0.0",
+  "description": "An interactive terminal-based Kubernetes course",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "axios": "^1.6.8",
+    "express": "^4.19.2",
+    "dotenv": "^16.4.5",
+    "marked": "^11.2.0",
+    "ws": "^8.17.0"
+  }
+}

@@ -1,0 +1,5 @@
+# Node dependencies
+node_modules/
+
+# Environment variables - DO NOT COMMIT THIS FILE
+.env
