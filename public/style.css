@@ -174,16 +174,19 @@ body[data-page="0"] header {
     padding-bottom: 40px;
 }
 
-body[data-page="0"] header h1 {
-    font-size: 2.5em; /* Make the main title larger on the first page */
-    margin-bottom: 0.5em;
+body[data-page="0"] main {
+    /* Special styling for the welcome page content */
+    background: linear-gradient(135deg, #F5F3FF, #FFFFFF); /* Soft lavender to white gradient */
+    border: 1px solid #C9BFF0; /* A medium lavender border */
+    border-radius: 12px;
+    padding: 30px;
+    margin-top: 20px;
+    box-shadow: 0 4px 15px rgba(138, 90, 205, 0.1);
 }
 
-body[data-page="0"] main {
-    border: none; /* Remove the border for a more open feel */
-    background-color: transparent; /* Make it blend with the container */
-    margin-top: 0;
-    padding-top: 0;
+body[data-page="0"] main p:first-of-type {
+    font-size: 1.1em; /* Make the intro text slightly larger */
+    color: #3A2E4C;
 }
 
 /* --- New animation for initial page load --- */
